@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.bazel.json",
+  "compilerOptions": {
+    "outDir": "target/types"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.js"
+  ]
+}

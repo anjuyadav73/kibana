@@ -1,0 +1,13 @@
+{
+  "id": "advancedSettings",
+  "version": "kibana",
+  "server": true,
+  "ui": true,
+  "requiredPlugins": ["management"],
+  "optionalPlugins": ["home", "usageCollection"],
+  "requiredBundles": ["kibanaReact", "kibanaUtils"],
+  "owner": {
+    "name": "Kibana Core",
+    "githubTeam": "kibana-core"
+  }
+}
