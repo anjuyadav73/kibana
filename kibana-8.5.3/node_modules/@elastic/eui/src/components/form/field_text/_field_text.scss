@@ -1,0 +1,15 @@
+.euiFieldText {
+  @include euiFormControlStyle;
+  @include euiFormControlWithIcon($isIconOptional: true, $side: 'left');
+
+  /* Invalid state normally comes from :invalid, but several components
+  /* like EuiDatePicker need it toggled through an extra class.
+  */
+  &.euiFieldText-isInvalid {
+    @include euiFormControlInvalidStyle;
+  }
+}
+
+.euiFieldText--withIcon.euiFieldText--compressed {
+  @include euiFormControlWithIcon($isIconOptional: false, $side: 'left', $compressed: true);
+}
